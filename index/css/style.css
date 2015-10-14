@@ -1,0 +1,310 @@
+﻿@font-face {
+	font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), 
+    url('../font/iconfont.woff') format('woff'),
+    url('../font/iconfont.ttf') format('truetype'),
+    url('../font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size: 2em;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+::-webkit-scrollbar{
+    background-color:#F1F1F1;
+    overflow:visible;
+    width:2px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:rgba(0, 0, 0, .2);
+    background-clip:padding-box;
+    min-height:15px;
+    box-shadow:inset 1px 1px 0 rgba(0, 0, 0, .1),inset 0 -1px 0 rgba(0, 0, 0, .07);
+}
+::-webkit-scrollbar-thumb:vertical:hover{
+    background-color:rgba(0, 0, 0, .3);
+}
+::-webkit-scrollbar-thumb:vertical:active{
+    background-color:rgba(0, 0, 0, .5);
+}
+::-webkit-scrollbar-button{
+    height:0;
+    width:0;
+}
+::-webkit-scrollbar-track{
+    background-clip:padding-box;
+    border:solid transparent;
+    border-width:0 0 0 4px;
+}
+::-webkit-scrollbar-corner{
+    background:transparent;
+}
+*{
+	margin: 0; padding: 0;
+}
+a,a:link,a:visited,a:hover,a:active{
+	color: #fff;
+	text-decoration: none;
+}
+body,html{
+	min-width:100%;
+	min-height:100%;
+}
+body{
+	border:0;
+	font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei","Hiragino Sans GB","Hiragino Sans GB W3",sans-serif;
+	-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+#loading{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	z-index: 5;
+}
+#loading img{
+	position: relative;
+	top: 40%;
+	left: 50%;
+	margin-left: -60px; 
+}
+#first-screen{
+	position: fixed;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow:hidden;
+	background-color: #000;
+}
+#second-screen{
+ 	background: #FAFAFA url(../img/congminBlack.png);
+ 	background-position: center 150px;
+ 	background-size: auto 150px;
+ 	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+	text-align: center;
+	z-index: 3;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+
+#myname{
+	display: none;
+	position: relative;
+	font-size: 7em;
+	top: 270px;
+	color: #2A2A2A;
+	font-weight: 900;
+	text-indent: 1em;
+	letter-spacing:1em;
+}	
+#wallpaper{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.black_overlay {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 1;
+	-moz-opacity: 0.25;
+	opacity: .25;
+	filter: alpha(opacity=25);
+}
+.white_content {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	overflow: hidden;
+	padding: 0;
+	text-align:center;
+	color:#fff;
+}
+.congmin{
+	position: relative;
+	margin: 0 auto;
+	display: block;
+	margin-top: 150px;
+	margin-bottom:40px;
+	height: 150px;
+}
+.white_content h2{
+	font-size: 1.5em;
+	font-weight:300;
+	line-height:2em;
+}
+.white_content h3{
+	font-size: 1.5em;
+	font-weight:500;
+}
+#totalSecond{
+	font-size: 1.25em;
+	margin-top:30px;
+}
+.int-banner-more{
+	cursor: pointer;
+	-moz-opacity: 0.8;
+	opacity: .8;
+	filter: alpha(opacity=80);
+	z-index: 3;
+    position: absolute;
+    bottom: 4.5em;
+    left: 50%;
+    margin-left: -30px;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+}
+.int-banner-mask{
+	font-size: 0.8em;
+  	padding-bottom: 2px;
+}
+.int-banner-more i{
+	display: block;
+	width: 6px;
+	height: 6px;
+	margin: -3px auto 0;
+ 	border: solid #fff;
+  	border-width: 0 1px 1px 0;
+ 	position: relative;
+}
+.int-banner-more i{
+  	-webkit-transform: rotate(45deg);
+  	-ms-transform: rotate(45deg);
+  	transform: rotate(45deg);
+}
+#tagsList{
+	visibility: hidden;
+	font-size: 2em;
+	position:relative;
+	top: 0px;
+	left: 8px;
+	width:250px;
+	height:190px;
+	margin: 0 auto;
+	-moz-opacity: 0.9;
+	opacity: .9;
+	filter: alpha(opacity=90);
+}
+#tagsList a{
+	display: block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	color:#fff;
+	width: 2em;
+	height: 2em;
+	line-height: 2em;
+	text-decoration:none;
+	padding: 7px;
+	margin: 7px;
+	border: 1px solid transparent;
+	border-radius: 2em;
+	-webkit-transition: border 0.3s, background 0.3s;
+	-o-transition: border 0.3s, background 0.3s;
+	transition: border 0.3s, background 0.3s;
+}
+#tagsList a:hover{
+	border: 1px solid #fff;
+	background: rgba(0,0,0,0.2);
+}
+.blog{
+	color: black;
+	position: absolute;
+	bottom: 0.5em;
+	left: 50%;
+	font-size: 12px;
+	margin-left: -74px;
+	-moz-opacity: 0.3;
+	opacity: .3;
+	filter: alpha(opacity=30);
+}
+#blog_a{
+	color: #2A2A2A;
+}
+#beian{
+	z-index: 2;
+	-moz-opacity: 0.7;
+	opacity: .7;
+	filter: alpha(opacity=70);
+	text-align: center;
+	color: #fff;
+	position: fixed;
+	bottom: 1em;
+	width: 400px;
+	left: 50%;
+	margin-left:-200px; 
+	line-height: 1em;
+}
+#icp{	
+	font-size: 0.78em;
+	margin: 3px;
+}
+#cqwa{
+	font-size: 0.7em;
+}
+#from_bing{
+	padding: 0em 0.8em;
+	z-index: 2;
+	-moz-opacity: 0.9;
+	opacity: .9;
+	filter: alpha(opacity=90);
+	position: fixed;
+	top: 2em;
+	right: 1.5em;
+	color: #fff;
+	font-size: 0.6em;
+	line-height: 1.8em;
+	height: 1.8em;
+	text-align: center;
+	border: 1px solid #fff;
+	border-radius: 1.8em;
+	-moz-border-radius: 1.8em;
+	-webkit-border-radius: 1.8em; 
+	-webkit-transition: background-color 0.5s,box-shadow 0.5s;
+	-o-transition: background-color 0.5s,box-shadow 0.5s;
+	transition: background-color 0.5s,box-shadow 0.5s;
+	background-color: rgba(211,211,211,0.2);
+}
+#from_bing:hover{
+	background-color: rgba(211,211,211,0);
+	box-shadow: 0 0 10px #D3D3D3;
+	-moz-box-shadow: 0 0 10px #D3D3D3;
+	-webkit-box-shadow: 0 0 10px #D3D3D3;
+}
+@media screen and (max-width: 600px){
+	.congmin{
+		width: 90%;
+		height: auto;
+	}
+	#tagsList{
+		top: 5%;
+	}
+	.int-banner-more{
+		display: none;
+	}
+	#second-screen{
+		display: none;
+	}
+}
