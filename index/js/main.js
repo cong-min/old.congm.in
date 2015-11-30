@@ -7,17 +7,17 @@ function loadImage(url){
     {
         $('#loading').fadeOut();
         $('#loading').empty();
-        $("#wallpaper").attr('src',o.src);
+        $(".wallpaper").attr('src',o.src);
     }
     else
     {
         o.onload = function(){
             $('#loading').fadeOut();
             $('#loading').empty();
-            $("#wallpaper").attr('src',o.src);
+            $(".wallpaper").attr('src',o.src);
         }
         o.onerror = function(){  
-    		$("#wallpaper").attr('src','index/img/bg.jpg');
+    		$(".wallpaper").attr('src','index/img/bg.jpg');
     	};
     }
 }
@@ -41,7 +41,7 @@ $(window).scroll(function(){
 
 $(function(){
     setTimeout(function(){
-        $("#wallpaper").attr('src',"http://congm.in/bing.php");
+        $(".wallpaper").attr('src',"http://congm.in/bing.php");
         $('#loading').fadeOut();
         $('#loading').empty();
     },3000);

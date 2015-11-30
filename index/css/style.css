@@ -113,7 +113,7 @@ body{
 	text-indent: 1em;
 	letter-spacing:1em;
 }	
-#wallpaper{
+.wallpaper{
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -197,12 +197,13 @@ body{
 #tagsList{
 	visibility: hidden;
 	font-size: 2em;
-	position:relative;
-	top: 0px;
-	left: 8px;
+	position: absolute;
+	bottom: 16%;
+	left: 50%;
 	width:250px;
 	height:190px;
 	margin: 0 auto;
+	margin-left: -120px;
 	-moz-opacity: 0.9;
 	opacity: .9;
 	filter: alpha(opacity=90);
@@ -295,16 +296,22 @@ body{
 }
 @media screen and (max-width: 600px){
 	.congmin{
+		margin-top: 30%;
 		width: 90%;
 		height: auto;
 	}
-	#tagsList{
-		top: 5%;
-	}
-	.int-banner-more{
+	.int-banner-more, #second-screen{
 		display: none;
 	}
-	#second-screen{
+	#tagsList{
+		bottom: 12%;
+	}
+}
+@media screen and (max-height: 500px){
+	.congmin{
+		margin-top: 100px;
+	}
+	#tagsList, .int-banner-more, #second-screen{
 		display: none;
 	}
 }
