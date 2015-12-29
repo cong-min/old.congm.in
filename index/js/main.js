@@ -1,5 +1,5 @@
 
-var myLoading = loadImage('http://congm.in/bing.php');
+var myLoading = loadImage('https://congm.in/bing.php');
 function loadImage(url){
 	var o = new Image();
 	o.src = url;
@@ -41,7 +41,7 @@ $(window).scroll(function(){
 
 $(function(){
     setTimeout(function(){
-        $(".wallpaper").attr('src',"http://congm.in/bing.php");
+        $(".wallpaper").attr('src',"https://congm.in/bing.php");
         $('#loading').fadeOut();
         $('#loading').empty();
     },3000);
