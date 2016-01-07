@@ -1,12 +1,14 @@
 <?php
-	$str=file_get_contents('http://cn.bing.com/HPImageArchive.aspx?idx=0&n=1');
-	if(preg_match("/<url>(.+?)<\/url>/ies",$str,$matches)){
-		$imgurl='http://cn.bing.com'.$matches[1];
+	$str = file_get_contents('http://cn.bing.com/HPImageArchive.aspx?idx=0&n=1');
+	if(preg_match("/<url>(.+?)<\/url>/ies", $str, $matches)){
+		$imgurl = 'http://cn.bing.com'.$matches[1];
 	}
 	if($imgurl){
-		header('Content-Type: image/JPEG');
-		@ob_end_clean();
-		@readfile($imgurl);
+		$img = imagecreatefromjpeg($imgurl);
+		header('Content-Type: image/jpeg');
+		imageinterlace($img, 1);
+		imagejpeg($img);
+		imagedestroy($img);
 		exit();
 	}else{
 		exit('error');
