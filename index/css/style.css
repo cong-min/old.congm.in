@@ -212,11 +212,10 @@ body{
   	-ms-transform: rotate(45deg);
   	transform: rotate(45deg);
 }
-#tagsList{
-	visibility: hidden;
+.tags{
 	font-size: 2em;
 	position: absolute;
-	bottom: 16%;
+	bottom: 18%;
 	left: 50%;
 	width:250px;
 	height:190px;
@@ -226,9 +225,17 @@ body{
 	opacity: .9;
 	filter: alpha(opacity=90);
 }
-#tagsList a{
+.tagcloud {
+    visibility: hidden;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.tagcloud a{
 	display: block;
-	position:absolute;
+	position: absolute;
 	top:0px;
 	left:0px;
 	color:#fff;
@@ -244,7 +251,7 @@ body{
 	-o-transition: border 0.3s, background 0.3s;
 	transition: border 0.3s, background 0.3s;
 }
-#tagsList a:hover{
+.tagcloud a:hover{
 	border: 1px solid #fff;
 	background: rgba(0,0,0,0.2);
 }
@@ -321,7 +328,7 @@ body{
 	.int-banner-more, #second-screen{
 		display: none;
 	}
-	#tagsList{
+	.tagcloud{
 		bottom: 12%;
 	}
 }
@@ -329,7 +336,7 @@ body{
 	.congmin{
 		margin-top: 100px;
 	}
-	#tagsList, .int-banner-more, #second-screen{
+	.tagcloud, .int-banner-more, #second-screen{
 		display: none;
 	}
 }

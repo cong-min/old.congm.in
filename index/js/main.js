@@ -73,6 +73,10 @@ $(function(){
             scrollTop: $("#second-screen").offset().top
         }, 2000);
     });
+    tagcloud({
+        radius: 80,
+        fontsize: 18
+    });
 });
 
 
