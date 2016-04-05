@@ -14,7 +14,7 @@ function loadImage(url){
 }
 var iUp = (function() {
     var t = 0,
-        d = 150,
+        d = 300,
         clean = function() {
             t = 0;
         },
@@ -72,10 +72,6 @@ $(function(){
         $("html,body").stop(true).animate({
             scrollTop: $("#second-screen").offset().top
         }, 2000);
-    });
-    tagcloud({
-        radius: 80,
-        fontsize: 18
     });
 });
 

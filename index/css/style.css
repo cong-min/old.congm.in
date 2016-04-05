@@ -189,7 +189,7 @@ body{
     position: absolute;
     bottom: 4.5em;
     left: 50%;
-    margin-left: -30px;
+    margin-left: -26px;
     text-align: center;
     color: #fff;
     font-weight: 300;
@@ -212,48 +212,30 @@ body{
   	-ms-transform: rotate(45deg);
   	transform: rotate(45deg);
 }
-.tags{
-	font-size: 2em;
+.to-blog{
 	position: absolute;
-	bottom: 18%;
+	top: 70%;
 	left: 50%;
-	width:250px;
-	height:190px;
-	margin: 0 auto;
-	margin-left: -120px;
-	-moz-opacity: 0.9;
-	opacity: .9;
-	filter: alpha(opacity=90);
-}
-.tagcloud {
-    visibility: hidden;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-.tagcloud a{
-	display: block;
-	position: absolute;
-	top:0px;
-	left:0px;
-	color:#fff;
-	width: 2em;
-	height: 2em;
-	line-height: 2em;
-	text-decoration:none;
-	padding: 7px;
-	margin: 7px;
-	border: 1px solid transparent;
-	border-radius: 2em;
-	-webkit-transition: border 0.3s, background 0.3s;
-	-o-transition: border 0.3s, background 0.3s;
-	transition: border 0.3s, background 0.3s;
-}
-.tagcloud a:hover{
+	margin-left: -52px;
+	width: 70px;
+	display: inline-block;
+	padding: 8px 16px;
 	border: 1px solid #fff;
-	background: rgba(0,0,0,0.2);
+	border-radius: 30px;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	color: #fff;
+	background-color: rgba(211,211,211,.2);
+	box-shadow: 0 0 5px #D3D3D3;
+	-moz-box-shadow: 0 0 5px #D3D3D3;
+	-webkit-box-shadow: 0 0 5px #D3D3D3;
+}
+.to-blog:hover{
+	background-color: rgba(211,211,211,.1);
+	box-shadow: 0 0 10px #D3D3D3;
+	-moz-box-shadow: 0 0 10px #D3D3D3;
+	-webkit-box-shadow: 0 0 10px #D3D3D3;
 }
 .blog{
 	color: black;
