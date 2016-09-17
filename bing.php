@@ -1,8 +1,7 @@
 <?php
-	$str = file_get_contents('http://cn.bing.com/HPImageArchive.aspx?idx=0&n=1');
-	if(preg_match("/<url>(.+?)<\/url>/ies", $str, $matches)){
-		$imgurl = 'http://cn.bing.com'.$matches[1];
-	}
+	$str = file_get_contents('http://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1');
+	$data = json_decode($str);
+	$imgurl = $data -> {"images"}[0] -> {"url"};
 	if($imgurl){
 		$img = imagecreatefromjpeg($imgurl);
 		header('Expires: ' . gmdate('D, d M Y H:i:s', strtotime(date('Y-m-d', strtotime('+1 day')))) . ' GMT'); 
