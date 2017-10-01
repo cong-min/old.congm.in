@@ -251,27 +251,6 @@ body{
 #blog_a{
 	color: #2A2A2A;
 }
-#beian{
-	z-index: 2;
-	-moz-opacity: 0.7;
-	opacity: .7;
-	filter: alpha(opacity=70);
-	text-align: center;
-	color: #fff;
-	position: fixed;
-	bottom: 1em;
-	width: 400px;
-	left: 50%;
-	margin-left:-200px; 
-	line-height: 1em;
-}
-#icp{	
-	font-size: 0.78em;
-	margin: 3px;
-}
-#cqwa{
-	font-size: 0.7em;
-}
 #from_bing{
 	padding: 0.2em 1em;
 	z-index: 3;
